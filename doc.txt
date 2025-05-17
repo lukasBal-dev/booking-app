@@ -1,0 +1,13 @@
+end points -
+	post login (to login an user)
+	post register (to register an user)
+	post book (to book a slot)
+	get mybookings (to see logged in users bookings)
+	get availableBookings (to get available bookins)
+	delete cancel (to delete a booking)
+to work on -
+	set up api (priority 1)
+	set up end points (priority 2)
+
+to try -
+	use my other object for logging in?
