@@ -3,7 +3,7 @@
 #
 cmake_minimum_required (VERSION 3.8)
 project ("booking-app")
-add_executable (booking-app "booking-app.cpp" "booking-app.h")
+add_executable (booking-app "src/main.cpp"  "src/helperFuncs/helpers.cpp" "src/helperFuncs/helpersUser.cpp"  "src/secFuncs/sec.cpp" "src/secFuncs/sec.h" "src/api/userAPI.h" "src/api/userAPI.cpp")
   # this is heuristically generated, and may not be correct
   find_package(cpprestsdk CONFIG REQUIRED)
   target_link_libraries(booking-app PRIVATE cpprestsdk::cpprest cpprestsdk::cpprestsdk_zlib_internal cpprestsdk::cpprestsdk_brotli_internal)
