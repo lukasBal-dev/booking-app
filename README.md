@@ -24,7 +24,7 @@ This is a simple backend server for a booking app project. It handles user regis
 
 ### Build
 1. Clone the repo
-2. Install dependencies using vcpkg (see below)
+2. Install dependencies using vcpkg
 3. Open the project in Visual Studio and build
 
 ### Running
@@ -32,10 +32,9 @@ This is a simple backend server for a booking app project. It handles user regis
 - Use the API endpoints to register, login, and manage bookings from your frontend or API client
 
 ## API Endpoints (examples)
-- `POST /register` — Register new user
-- `POST /login` — Login and receive a session token
-- `POST /booking` — Make a booking with session token and user info
-- `GET /bookings` — Get available bookings
+- `POST /reg` — Register new user
+- `POST /log` — Login and receive a session token
+- `POST /book` — Make a booking with session token and user info
 
 ## Notes
 - This project is still in development, but the core features are implemented
