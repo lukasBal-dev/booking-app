@@ -5,7 +5,7 @@ This is a simple backend server for a booking app project. It handles user regis
 - User registration with hashed passwords
 - User login with session token generation and expiration
 - Session token validation for secure access
-- Booking management: view available reservations and make bookings
+- Booking management: make bookings, seeing available bookings will come soon
 - CORS enabled for frontend interaction
 - JSON-based API for easy frontend integration
 
@@ -33,13 +33,30 @@ This is a simple backend server for a booking app project. It handles user regis
 
 ## API Endpoints (examples)
 - `POST /reg` — Register new user
+
 - `POST /log` — Login and receive a session token
 - `POST /book` — Make a booking with session token and user info
 
+## Examples
+
+```json
+{
+    "reg":{"username":"johny", "password":"insanelysecurepassword"}
+}
+```
+```json
+{
+    "log":{"username":"johny","password":"insanelysecurepassowrd"}
+}
+```
+```json
+{
+    "book":{"username":"johny", "token":"token", "resId":"reservation ID"}
+}
+```
 ## Notes
-- This project is still in development, but the core features are implemented
-- Session tokens expire after a set time for security
+- This project is still in development, but the most of the core features are implemented
+- Session tokens expire after a set time for security (for now it is 10 hours but it is possible to change it)
 - Passwords are hashed before storage
 - The backend currently uses JSON files for simplicity, no database yet
-
 ---
