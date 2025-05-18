@@ -12,7 +12,7 @@ void replyWithCORS(http_request req, status_code status, const json::value& body
     response.headers().add(U("Access-Control-Allow-Origin"), U("*"));
     response.headers().add(U("Access-Control-Allow-Methods"), U("GET, POST, OPTIONS"));
     response.headers().add(U("Access-Control-Allow-Headers"), U("Content-Type"));
-    response.headers().add(U("Access-Control-Max-Age"), U("86400")); // 1 day
+    response.headers().add(U("Access-Control-Max-Age"), U("86400"));
     response.set_body(body);
     req.reply(response);
 }

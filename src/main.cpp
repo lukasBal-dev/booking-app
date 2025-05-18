@@ -4,7 +4,8 @@ int main()
 {
 	std::wstring address = U("http://localhost:8080");
 	std::wstring userFile = U("users.json");
-	UserAPI api(address, userFile);
+	std::wstring bookingFile = U("reservations.json");
+	UserAPI api(address, userFile, bookingFile);
 	api.open();
 	std::wcout << L"server started" << std::endl;
 	std::wstring line;
