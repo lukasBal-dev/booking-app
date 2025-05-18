@@ -19,7 +19,7 @@ This is a simple backend server for a booking app project. It handles user regis
 
 ### Prerequisites
 - Visual Studio 2022 or newer with C++ support
-- vcpkg package manager for dependencies
+- vcpkg or other package manager for dependencies
 - CppREST SDK, OpenSSL (for hashing), and other dependencies installed via vcpkg
 
 ### Build
